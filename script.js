@@ -2,8 +2,14 @@ const username = "DevXinHuang";
 const repoList = document.getElementById("repo-list");
 const statusEl = document.getElementById("repo-status");
 const yearEl = document.getElementById("year");
+const profilePhoto = document.getElementById("profile-photo");
+const heroPhotoWrap = document.getElementById("hero-photo-wrap");
 
 async function loadRepos() {
+  if (!repoList || !statusEl) {
+    return;
+  }
+
   const endpoint = `https://api.github.com/users/${username}/repos?sort=updated&per_page=12`;
 
   try {
@@ -56,5 +62,16 @@ function updateYear() {
   }
 }
 
+function handlePhotoFallback() {
+  if (!profilePhoto || !heroPhotoWrap) {
+    return;
+  }
+
+  profilePhoto.addEventListener("error", () => {
+    heroPhotoWrap.classList.add("is-missing");
+  });
+}
+
 updateYear();
 loadRepos();
+handlePhotoFallback();

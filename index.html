@@ -3,18 +3,18 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daniel Huang | Portfolio</title>
+    <title>Daniel Huang | Exoplanets, Roman CGI, and Detectability</title>
     <meta
       name="description"
-      content="Daniel Huang builds software at the intersection of nature, science, and modern web development."
+      content="Daniel Huang studies exoplanet atmospheres and detectability, with Roman CGI-adjacent modeling at the boundary of theory and instrumentation."
     />
-    <meta property="og:title" content="Daniel Huang | Portfolio" />
+    <meta property="og:title" content="Daniel Huang | Exoplanets, Roman CGI, and Detectability" />
     <meta
       property="og:description"
-      content="Of stardust are we made and by starlight we live. Explore Daniel Huang's projects and work."
+      content="Research in exoplanet atmospheres, detectability modeling, computation, and instrumentation-adjacent science."
     />
     <meta property="og:type" content="website" />
-    <meta name="theme-color" content="#0d1d2f" />
+    <meta name="theme-color" content="#060f1c" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -30,82 +30,187 @@
     <header class="site-header">
       <a class="brand" href="#top">Daniel Huang</a>
       <nav>
-        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#computation">Computation</a>
+        <a href="#field-work">Field Work</a>
+        <a href="#beyond">Beyond</a>
         <a href="#projects">Projects</a>
-        <a href="#connect">Connect</a>
       </nav>
     </header>
 
     <main id="top">
       <section class="hero reveal">
-        <p class="eyebrow">Tucson, Arizona</p>
-        <h1>Building software for nature, science, and everyday curiosity.</h1>
-        <p class="lead">
-          I’m Daniel Huang. I build practical tools across web apps, local-first software,
-          and research workflows. <span class="quote">Of stardust are we made and by starlight we live.</span>
-        </p>
-        <div class="hero-actions">
-          <a class="btn primary" href="https://github.com/DevXinHuang" target="_blank" rel="noreferrer">GitHub</a>
-          <a class="btn secondary" href="#projects">See Projects</a>
+        <div class="hero-copy">
+          <p class="eyebrow">Tucson, Arizona</p>
+          <h1>Exoplanets, Roman CGI &amp; Detectability</h1>
+          <p class="lead">
+            My current research focus is exoplanet atmospheres and detectability,
+            with particular emphasis on how physical models translate into realistic
+            observational outcomes for future space missions.
+          </p>
+          <p class="quote">
+            Of stardust are we made and by starlight we live.
+          </p>
+          <div class="hero-actions">
+            <a class="btn primary" href="https://github.com/DevXinHuang" target="_blank" rel="noreferrer">GitHub</a>
+            <a class="btn secondary" href="#research">Read Research Focus</a>
+          </div>
         </div>
+
+        <figure class="hero-photo" id="hero-photo-wrap">
+          <img
+            id="profile-photo"
+            src="/assets/images/daniel-horse.jpg"
+            alt="Daniel Huang with a horse"
+            loading="eager"
+            decoding="async"
+          />
+        </figure>
       </section>
 
-      <section id="about" class="about reveal">
-        <h2>About</h2>
+      <section id="research" class="content-block reveal">
+        <h2>Roman CGI-Adjacent Research</h2>
         <p>
-          I’m focused on building products that are useful in the real world. My recent work spans
-          birdwatching platforms, local desktop apps, and science-oriented coding projects.
-          I enjoy blending solid engineering with curiosity-driven problem solving.
+          A central thread of my work is research adjacent to the Nancy Grace Roman
+          Space Telescope Coronagraph Instrument (Roman CGI).
         </p>
-        <div class="focus-grid">
-          <article>
-            <h3>Web Platforms</h3>
-            <p>TypeScript-driven apps and polished interfaces for communities and teams.</p>
-          </article>
-          <article>
-            <h3>Local-First Tools</h3>
-            <p>Desktop experiences that keep data close and fast, even offline.</p>
-          </article>
-          <article>
-            <h3>Scientific Coding</h3>
-            <p>Python and notebook-based exploration for astronomy and data-intensive workflows.</p>
-          </article>
-        </div>
+        <p>
+          Rather than treating detectability as a binary label, I am interested in
+          the structure underneath it:
+        </p>
+        <ul class="list-block">
+          <li>Which planets are actually detectable with Roman CGI?</li>
+          <li>How do phase angle, wavelength, cloud physics, and atmospheric structure shape observability?</li>
+          <li>Where do common detectability assumptions break down?</li>
+        </ul>
+
+        <p>My work involves constructing and interrogating model grids that connect:</p>
+        <ul class="list-block list-grid">
+          <li>Atmospheric structure and composition</li>
+          <li>Reflected versus thermal flux</li>
+          <li>Viewing geometry and phase angle</li>
+          <li>Instrumental sensitivity limits</li>
+        </ul>
+
+        <p>
+          The goal is not just to produce plots, but to understand the assumptions
+          embedded in them, and to refine detectability arguments so they are
+          transparent, reproducible, and physically grounded.
+        </p>
+        <p>
+          Roman CGI sits at a particularly interesting boundary: between theory and
+          instrumentation, ambition and feasibility. That boundary is where I enjoy
+          working most.
+        </p>
+      </section>
+
+      <section id="computation" class="content-block reveal">
+        <h2>Computation as a Research Tool</h2>
+        <p>Computation is central to how I think about science.</p>
+        <p>I use Python-based scientific workflows to:</p>
+        <ul class="list-block">
+          <li>Explore large parameter spaces</li>
+          <li>Build reproducible model grids</li>
+          <li>Use visualization as a diagnostic tool, not just a presentation layer</li>
+        </ul>
+        <p>
+          I am especially interested in computational work that sharpens physical
+          intuition rather than replacing it, where every result can be traced back
+          to a meaningful assumption.
+        </p>
+      </section>
+
+      <section id="field-work" class="content-block reveal">
+        <h2>Amateur Radio, Engineering &amp; Field Work</h2>
+        <p>
+          Outside the classroom and lab, I am deeply involved in amateur radio and
+          student-led engineering projects.
+        </p>
+        <p>
+          I am a General-class amateur radio operator (Call Sign: N7XIN) and serve
+          as Vice President of the University of Arizona Amateur Radio Club (K7UAZ).
+        </p>
+        <p>Through the club, I help organize:</p>
+        <ul class="list-block">
+          <li>Weekly radio nets and technical outreach</li>
+          <li>High-altitude PicoBalloon experiments</li>
+          <li>Field deployments that combine RF engineering, atmospheric conditions, and real-world constraints</li>
+        </ul>
+        <p>
+          Amateur radio has strongly influenced how I approach research: signals are
+          fragile, environments are messy, and theory only matters if it survives
+          reality.
+        </p>
+      </section>
+
+      <section id="beyond" class="content-block reveal">
+        <h2>Beyond Academics</h2>
+        <p>
+          Outside of research, I spend much of my time in the field or behind a
+          camera.
+        </p>
+        <p>I am active in:</p>
+        <ul class="list-block list-grid">
+          <li>Astrophotography</li>
+          <li>Film photography</li>
+          <li>Birdwatching and field observation</li>
+          <li>Hiking and outdoor exploration</li>
+        </ul>
+        <p>
+          These pursuits are not separate from my scientific interests. They shape
+          how I observe, document, and stay curious about the world.
+        </p>
+      </section>
+
+      <section id="drivers" class="content-block reveal">
+        <h2>What Drives My Work</h2>
+        <p>I am motivated by problems where:</p>
+        <ul class="list-block">
+          <li>Models meet instruments</li>
+          <li>Theory meets constraint</li>
+          <li>Complex science can be made more honest and accessible</li>
+        </ul>
+        <p>
+          Whether through exoplanet research, instrumentation-adjacent modeling, or
+          student-led engineering projects, my goal is to build work that is
+          technically rigorous, grounded in reality, and worth sharing.
+        </p>
       </section>
 
       <section id="projects" class="projects reveal">
         <div class="section-head">
-          <h2>Featured Projects</h2>
+          <h2>Recent GitHub Work</h2>
           <a class="text-link" href="https://github.com/DevXinHuang?tab=repositories" target="_blank" rel="noreferrer">
-            View all repos
+            View all repositories
           </a>
         </div>
 
-        <div class="cards" id="repo-grid">
-          <article class="card pinned">
+        <div class="cards">
+          <article class="card">
+            <h3>subtract_psf</h3>
+            <p>
+              Simulations of PSF subtraction with synthetic NIRSpec IFU observations,
+              focused on physically grounded detectability work.
+            </p>
+            <a href="https://github.com/DevXinHuang/subtract_psf" target="_blank" rel="noreferrer">Open project</a>
+          </article>
+
+          <article class="card">
             <h3>PlumaUA</h3>
             <p>
-              A comprehensive birdwatching platform for the University of Arizona community,
-              connecting students, faculty, and staff with local avian life.
+              A TypeScript platform connecting the University of Arizona community
+              with birdwatching data and campus avian life.
             </p>
             <a href="https://github.com/DevXinHuang/PlumaUA" target="_blank" rel="noreferrer">Open project</a>
           </article>
 
-          <article class="card pinned">
+          <article class="card">
             <h3>Avian Archive</h3>
             <p>
-              A local-first desktop app built with Electron and React to organize bird photos,
-              sightings, maps, and long-term observation logs.
+              A local-first Electron + React desktop application for organizing
+              sightings, photos, maps, and field records.
             </p>
             <a href="https://github.com/DevXinHuang/avian_archive" target="_blank" rel="noreferrer">Open project</a>
-          </article>
-
-          <article class="card pinned">
-            <h3>Higgs Lovers</h3>
-            <p>
-              Notebook-based exploration in particle physics and computational analysis.
-            </p>
-            <a href="https://github.com/DevXinHuang/higgs_lovers" target="_blank" rel="noreferrer">Open project</a>
           </article>
         </div>
 
@@ -115,21 +220,11 @@
           <ul id="repo-list" aria-live="polite"></ul>
         </div>
       </section>
-
-      <section id="connect" class="connect reveal">
-        <h2>Let’s Connect</h2>
-        <p>
-          If you want to collaborate on web apps, science tools, or creative software projects,
-          reach out through GitHub.
-        </p>
-        <a class="btn primary" href="https://github.com/DevXinHuang" target="_blank" rel="noreferrer">Message on GitHub</a>
-      </section>
     </main>
 
     <footer>
       <p>
-        <span id="year"></span> Daniel Huang.
-        Built for GitHub Pages.
+        <span id="year"></span> Daniel Huang | Call Sign N7XIN
       </p>
     </footer>
 

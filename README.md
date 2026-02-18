@@ -2,6 +2,14 @@
 
 Personal website built as a lightweight static site and ready for GitHub Pages.
 
+## Profile image
+
+Place your hero photo at:
+
+`/Users/xin/Documents/Documents/College/My_website/assets/images/daniel-horse.jpg`
+
+You can rename it, but then update the `src` in `index.html`.
+
 ## Run locally
 
 From this folder, open `index.html` directly in a browser, or run a local server:
